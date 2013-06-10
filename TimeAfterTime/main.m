@@ -7,21 +7,34 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "StockHolding.h"
+#import "Employee.h"
+#import "Asset.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        StockHolding *one = [[StockHolding alloc] init];
+        // Create an array of Employee objects
+        NSMutableArray *employees = [[NSMutableArray alloc] init];
         
-        [one setCurrentSharePrice:20.5];
-        [one setPurchaseSharePrice:10.53];
-        [one setNumberOfShares:5000];
+        for(int i=0; i< 10; i++){
+            
+            //Create an instance of Employee
+            Employee *person = [[Employee alloc] init];
+            
+            //
+            [person setWeightInKilos:90+i];
+            [person setHeightInMeters:1.8 - i/10.0];
+            [person setEmployeeID:i];
+            
+            [employees addObject:person];
+        }
         
-        float two = [one costInDollars];
-        
-        NSLog(@"current share price of $%0.2f were originally bought at $%0.2f. this cost $%0.2f! but dag yall, they're now worth $%0.2f. andddd %@", [one currentSharePrice], [one purchaseSharePrice], two, [one valueInDollars], one);
+        for(int i=0; i < 10; i++){
+            
+            // Create an array
+            //Asset *asset = [[Asset alloc] init];
+        }
     }
     return 0;
 }

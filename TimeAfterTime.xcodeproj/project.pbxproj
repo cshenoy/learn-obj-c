@@ -13,6 +13,7 @@
 		4CDEB463176276BB001A3CE9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB462176276BB001A3CE9 /* Person.m */; };
 		4CDEB46617628CDC001A3CE9 /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB46517628CDC001A3CE9 /* StockHolding.m */; };
 		4CDF94DB1766752F008C794A /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF94DA1766752F008C794A /* Employee.m */; };
+		4CDF94DE17667A4E008C794A /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF94DD17667A4E008C794A /* Asset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		4CDEB46517628CDC001A3CE9 /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
 		4CDF94D91766752F008C794A /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		4CDF94DA1766752F008C794A /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		4CDF94DC17667A4E008C794A /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		4CDF94DD17667A4E008C794A /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				4C746A02175EB3C9003C6279 /* main.m */,
 				4CDF94D91766752F008C794A /* Employee.h */,
 				4CDF94DA1766752F008C794A /* Employee.m */,
+				4CDF94DC17667A4E008C794A /* Asset.h */,
+				4CDF94DD17667A4E008C794A /* Asset.m */,
 				4CDEB461176276BB001A3CE9 /* Person.h */,
 				4CDEB46417628CDC001A3CE9 /* StockHolding.h */,
 				4CDEB46517628CDC001A3CE9 /* StockHolding.m */,
@@ -158,6 +163,7 @@
 				4CDEB463176276BB001A3CE9 /* Person.m in Sources */,
 				4CDEB46617628CDC001A3CE9 /* StockHolding.m in Sources */,
 				4CDF94DB1766752F008C794A /* Employee.m in Sources */,
+				4CDF94DE17667A4E008C794A /* Asset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

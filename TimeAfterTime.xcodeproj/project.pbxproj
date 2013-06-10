@@ -10,6 +10,9 @@
 		4C746A00175EB3C9003C6279 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7469FF175EB3C9003C6279 /* Foundation.framework */; };
 		4C746A03175EB3C9003C6279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C746A02175EB3C9003C6279 /* main.m */; };
 		4C746A07175EB3C9003C6279 /* TimeAfterTime.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C746A06175EB3C9003C6279 /* TimeAfterTime.1 */; };
+		4CDEB463176276BB001A3CE9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB462176276BB001A3CE9 /* Person.m */; };
+		4CDEB46617628CDC001A3CE9 /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB46517628CDC001A3CE9 /* StockHolding.m */; };
+		4CDF94DB1766752F008C794A /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF94DA1766752F008C794A /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		4C746A02175EB3C9003C6279 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C746A05175EB3C9003C6279 /* TimeAfterTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeAfterTime-Prefix.pch"; sourceTree = "<group>"; };
 		4C746A06175EB3C9003C6279 /* TimeAfterTime.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TimeAfterTime.1; sourceTree = "<group>"; };
+		4CDEB461176276BB001A3CE9 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4CDEB462176276BB001A3CE9 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4CDEB46417628CDC001A3CE9 /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
+		4CDEB46517628CDC001A3CE9 /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
+		4CDF94D91766752F008C794A /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		4CDF94DA1766752F008C794A /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				4C746A02175EB3C9003C6279 /* main.m */,
+				4CDF94D91766752F008C794A /* Employee.h */,
+				4CDF94DA1766752F008C794A /* Employee.m */,
+				4CDEB461176276BB001A3CE9 /* Person.h */,
+				4CDEB46417628CDC001A3CE9 /* StockHolding.h */,
+				4CDEB46517628CDC001A3CE9 /* StockHolding.m */,
+				4CDEB462176276BB001A3CE9 /* Person.m */,
 				4C746A06175EB3C9003C6279 /* TimeAfterTime.1 */,
 				4C746A04175EB3C9003C6279 /* Supporting Files */,
 			);
@@ -140,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C746A03175EB3C9003C6279 /* main.m in Sources */,
+				4CDEB463176276BB001A3CE9 /* Person.m in Sources */,
+				4CDEB46617628CDC001A3CE9 /* StockHolding.m in Sources */,
+				4CDF94DB1766752F008C794A /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +260,7 @@
 				4C746A0C175EB3C9003C6279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

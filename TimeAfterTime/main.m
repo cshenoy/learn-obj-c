@@ -33,8 +33,29 @@ int main(int argc, const char * argv[])
         for(int i=0; i < 10; i++){
             
             // Create an array
-            //Asset *asset = [[Asset alloc] init];
+            Asset *asset = [[Asset alloc] init];
+            
+            NSString *currentLabel = [NSString stringWithFormat:@"Laptop %d", i];
+            [asset setLabel:currentLabel];
+            [asset setResaleValue:i*17];
+            
+            NSUInteger randomIndex = random() % [employees count];
+            
+            Employee *randomEmployee = [employees objectAtIndex:randomIndex];
+            
+            [randomEmployee addAssetsObject:asset];
         }
+        
+        NSLog(@"Employees: %@", employees);
+        
+        NSLog(@"Giving up ownership of one employee");
+        
+        [employees removeObjectAtIndex:5];
+        
+        NSLog(@"Giving up ownership of array");
+        
+        employees = nil;
     }
+    sleep(100);
     return 0;
 }

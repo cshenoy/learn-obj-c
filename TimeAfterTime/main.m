@@ -30,32 +30,47 @@ int main(int argc, const char * argv[])
             [employees addObject:person];
         }
         
+        NSMutableArray *allAssets = [[NSMutableArray alloc] init];
+        
         for(int i=0; i < 10; i++){
             
             // Create an array
             Asset *asset = [[Asset alloc] init];
             
+            // give asset a label and resale value
             NSString *currentLabel = [NSString stringWithFormat:@"Laptop %d", i];
             [asset setLabel:currentLabel];
             [asset setResaleValue:i*17];
             
+            // generate random number between 0 and 9
             NSUInteger randomIndex = random() % [employees count];
             
+            // find random employee
             Employee *randomEmployee = [employees objectAtIndex:randomIndex];
             
+            // assign asset to that employee
             [randomEmployee addAssetsObject:asset];
+            
+            [allAssets addObject:asset];
         }
         
+        /*NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets"
+                                                              ascending:YES];
+        NSSortDescriptor *ei = [NSSortDescriptor sortDescriptorWithKey:@"employeeID"
+                                                             ascending:YES];
+        [employees sortUsingDescriptors:[NSArray arrayWithObjects:voa, ei, nil]];*/
         NSLog(@"Employees: %@", employees);
         
         NSLog(@"Giving up ownership of one employee");
         
         [employees removeObjectAtIndex:5];
         
+        NSLog(@"allAssets: %@", allAssets);
+        
         NSLog(@"Giving up ownership of array");
         
+        allAssets = nil;
         employees = nil;
     }
-    sleep(100);
     return 0;
 }
